@@ -1,0 +1,56 @@
+\documentclass[11pt, oneside]{article}   	% use "amsart" instead of "article" for AMSLaTeX format
+\usepackage{geometry}                		% See geometry.pdf to learn the layout options. There are lots.
+\usepackage{graphicx}
+\usepackage{rotating}
+\usepackage{amsmath}
+\usepackage{natbib} %Bu agsm bibliographystyle icin gerekli. 
+\usepackage{float}
+\usepackage{tabularx,ragged2e,booktabs,caption}
+\usepackage{listings}
+\usepackage{textcomp}
+%\usepackage{hyperref}
+\usepackage[colorlinks=true,citecolor=blue]{hyperref}
+\usepackage{float}
+%\usepackage[colorlinks=true,linkcolor=blue]{hyperref}%
+%\usepackage{jf}
+\floatstyle{boxed} 
+\geometry{letterpaper}       
+
+\setlength{\parindent}{4em}
+\setlength{\parskip}{1em}
+\renewcommand{\baselinestretch}{1.2}
+
+\begin{document}
+
+	\begin{center}
+		\Large\textbf{Does Economic-Policy Uncertainty Lead to Higher Systemic Risk Contributions of Banks?\footnote{I will present this topic as my first-year paper, which is a requirement of Finance PhD program.}}\\
+		\large{Destan Kirimhan}\\
+		\large{University of South Carolina}\\
+		\large{Finance Department}	
+			\author{Destan} %pdfi acinca yazar bu. Normal textte yazmaz. 
+	\end{center}
+\\
+Financial crisis started in 2007 signaled lack or inadequacy of coordination among microprudential policies at the macro level. Individual banks or markets aimed to control mainly for their own idiosyncratic risks but they tended to put a lower weight on the negative externalities of other banks and markets on the whole financial system. However, \cite{debandt2015} argue that even one distressed financial institution may adversely affect all the system through transmission mechanisms among financial institutions. Furthermore, correlations among banks\textsc{\char13} assets and liabilities during the systemic events become higher than those in the normal times, in which these correlations reflect banks\textsc{\char13} fundamentals (\cite{adrianbrunnermeier2009}). This significant comovement among financial institutions\textsc{\char13} balance sheet items threatens the financial system as a whole. However, an individual banks’ idiosyncratic risks and the systematic risk driven by macroeconomic fluctuations are not sufficient to consider this surged dependency among banks during systemic events. For these reasons, there is an accord on the need for macroprudential policies, including systemic risk, which regards the stability of the financial system as a whole, into account (\cite{adrianbrunnermeier2009,borio2003}). \\
+Systemic risk is defined by its substantial adverse effects on the whole financial market and the real economy such as drop in industrial production level. Importance of systemic risk stems from its difference from the idiosyncratic risk such that a failed bank or about to fail bank can have high idiosyncratic risk related to its own firm-level and industry-level microeconomic features yet, systemic risk captures the negative externality of an individual bank failure on the whole financial system and the real economy. The reason relies on the incapability of other banks in the system to either merge with the failed bank before the failure or acquire it. Moreover, ex-post intervention of government via a bailout will impose additional costs on the regulation of financial system by draining the tax revenues of government in an already illiquid environment (\cite{brownleesengle2015}). \\
+A bank\textsc{\char13}s excessive risk-taking may have contagious effects on other banks through transmission mechanisms (\cite{hartmannvries2006}), investors\textsc{\char13} confidence to financial system (\cite{calomiris1997}) and interbank lending exposures of banks (\cite{iyer2011}). Second, an exogenous aggregate level shock may affect all of the financial institutions in the market by causing correlated returns on bank stocks. Third, a financial imbalance such as credit expansions and herding behaviors of banks may accumulate endogenously and lead to a negative systemic event (\cite{debandt2015}). Moreover, there are \textsc{\char13}individually systemic\textsc{\char13} banks and/or banks that are \textsc{\char13}systemic part of a herd\textsc{\char13} such that their extreme interconnedness and large sizes may exacerbate the first fire ignited into the financial system (\cite{brunnermeier2009}). \\
+Most of the studies in the literature focus on how to measure systemic risk properly by taking leverage and stock return correlations across banks into account (\cite{acharya2012,acharya2017,brunnermeier2009,brownleesengle2015}). Another empirical stream of papers relates political uncertainty and economic-policy related uncertainty to equity risk premium. There is a positive relationship between political uncertainty and equity risk premium, which is empirically supported by the abnormal returns especially before the highly uncertain elections (\cite{li2006}). Also, economic-policy related uncertainty leads to more equity risk premium (\cite{pastorveronesi2012}). \\
+Although papers that focused on the measurement of systemic risk provide several explanatory variables, they do not elaborate on the underlying mechanisms. Therefore, there is a gap in the literature to explain the potential determinants of systemic risk. The main contribution of this paper relies on analyzing a possible contributor to systemic risk, which is economic-policy related uncertainty . One possible determinant of individual bank\textsc{\char13}s contribution to systemic risk can be economic-policy uncertainty. \cite{pastorveronesi2012} find empirical evidence such that stock prices decrease after a change in government policy however, this adverse effect is stronger in case there is high uncertainty related to the policy change. In addition, policy changes lead to higher volatility and higher dependency among stock returns, which may signal an increase in contribution to systemic risk of each bank in the financial system. \\
+This paper aims to test whether economic-policy related uncertainty has a significant positive impact on individual bank\textsc{\char13}s contribution of systemic risk in the U.S.  Uncertainty is linked to macroeconomic variables such as the investment levels (\cite{bloom2009}), inflation rates (\cite{drazen1990}), capital flows (\cite{hermes2001}), welfare (\cite{gomes2008}) and stock prices (\cite{pastorveronesi2012}). However, to the best of author\textsc{\char13}s knowledge, this study is the first paper that links policy uncertainty to systemic risk. Furthermore, additional intuition is expected to be provided to the reader through the analysis on possible channels regarding the effect of uncertainty on systemic risk contributions of each bank.\\
+
+\noindent\textbf{Econometric Framework}\\
+Lets define systemic risk contributions of banks as $NSRISK$, economic-policy uncertainty as $PU$, risk control variables, including the idiosyncratic risk and systematic risk, as $X_{risk}$, bank controls for proxies of banks' performances as $X_{CAMELS}$, other bank control variables as $X_{others}$, macroeconomic control variables as $X_{Macro}$ and the error term as $\epsilon$. Then, the main model specification of a panel regression, where $i$ indicates banks and $t$ indicates time periods measured as months, is as follows:
+\begin{equation}
+$$NSRISK_{i,t}$=\alpha+\beta_{1} PU_{i,t-1}+\beta_{2} $X_{risk}__{i,t}$ +\beta_{3} $X_{CAMELS}__{i,t}$ +\beta_{4} $X_{others}__{i,t}$ +\beta_{5} $X_{Macros__{i,t}}$ + \epsilon_{i,t}$$
+\end{equation}
+
+\bibliographystyle{agsm} %apalike da olabilir. 
+\bibliography{librarydestan}
+
+\end{document}
+
+
+
+
+
+
+
